@@ -94,3 +94,7 @@
 5. apt-get update ---> update ubuntu
 6. apt-get install nginx ---> to install nginx server
 7. service nginx status
+
+# Matrix
+
+<img src="./matrix-before.jpg" alt="matrix-before" />
