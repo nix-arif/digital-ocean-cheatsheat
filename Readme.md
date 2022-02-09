@@ -82,4 +82,15 @@
 #### SSH
 
 1. cd ~/.ssh/
-2. ssh-keygen --> will generate 2 file which are publickey and private key, public key will be used
+2. ssh-keygen --> will generate 2 file which are publickey and private key, public key will be used by the server and will be stored in the server, private key will be used by you to authenticated to the server (like a password).
+
+# Useful command
+
+1. ssh -i <location of private key> root@<public ip address>
+   1.1 usually command is ssh -i ~/.ssh/id_rsa root@195.024.054.054
+2. after succesfully connecting to droplet
+3. free -h ---> to access memory capacity
+4. df -h ---> to view storage capacity
+5. apt-get update ---> update ubuntu
+6. apt-get install nginx ---> to install nginx server
+7. service nginx status
