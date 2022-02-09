@@ -95,6 +95,17 @@
 6. apt-get install nginx ---> to install nginx server
 7. service nginx status
 
-# Matrix
+# Metrics
 
-<img src="./matrix-before.jpg" alt="matrix-before" />
+1. In previous setting, we dont tick on monitoring (Select Additional Options), we will do it here.
+2. Picture below shows graph default by digital ocean before install the metrics.
+   <img src="./metrics-before.jpg" alt="metrics-before" />
+3. Link to refer to install metrics agent https://docs.digitalocean.com/products/monitoring/how-to/install-agent/
+4. ssh to the root@XXX.XXX.XXX.XXX
+5. curl -sSL https://repos.insights.digitalocean.com/install.sh | sudo bash
+6. After installation result as picture below.
+   <img src="./metrics-after.png" alt="metrics-after">
+7. `apt-get install stress` (stress is a package to burn CPU cores)
+8. `apt-get install htop` (tools to view stat)
+9. `stress --cpu 1 --timeout 30` (stress the CPU for 30 seconds)
+10. `htop` (this command to view stat)
