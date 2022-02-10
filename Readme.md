@@ -45,10 +45,26 @@
   ```
   htop
   ```
+- to shutdown droplet
+  '''
+  poweroff
+  '''
 
 ## Firewall
 
 <img src="./firewall.png" alt="firewall" />
+
+## VPC
+
+<img src="./vpc.png" alt="vpc" />
+
+## Snapshot
+
+<img src="./snapshot.png" alt="snapshot" />
+
+## Digital Ocean Volume & Spaces
+
+// TODO
 
 # Notes
 
@@ -164,6 +180,24 @@
 9. `stress --cpu 1 --timeout 30` (stress the CPU for 30 seconds)
 10. `htop` (this command to view stat)
 
-```
+## VPC
 
-```
+1. Virtual Private Cloud
+2. Is a way for a more than 1 droplet comunicate each other via intranet.
+3. All droplet must within data center.
+4. More secure and fast.
+5. Eg. one droplet for application, one droplet for database, so they can communicat with each other via VPC rather using internet.
+6. All droplet will associated with private ip address
+7. You can configure your own private ip address whether class A, B or C.
+
+## Snapshot
+
+1. Exact copy of droplet.
+2. The intended to copy droplet can be running or stop (better stop).
+3. Used to make droplet still remain but not destroy.
+4. Very cheap ($0.05/GB per month).
+5. Can be think as backup, digital ocean technically offer backup but much more expensive. Better use Snapshot.
+6. This file cannot be download, only remain in digital ocean.
+7. The process of creating snapshot may take some time depending on the size of the droplet.
+8. When the process is finish, we can use this snapshot to make another droplet with the same configuration.
+9. The snapshot is copy of whole system includes ubuntu OS, txt file and everything, exactly the same.
