@@ -1,3 +1,33 @@
+# Command
+
+## Basic installation
+
+- ssh to the droplet
+  `ssh -i ~/.ssh/id_rsa root@XXX.XXX.XXX.XXX`
+- update Ubuntu
+  `apt-get update`
+- install nginx
+  `apt-get install nginx`
+- check memory capacity
+  `free -h`
+- check storage capacity
+  `df -h`
+
+## Metrics
+
+- installing metrics agent
+  `curl -sSL https://repos.insights.digitalocean.com/install.sh | sudo bash`
+- installing stree (a package to burn CPU)
+  `apt-get install stress`
+- installing htop (a package to view stat)
+  `apt-get install htop`
+- stress the CPU for 30 seconds
+  `stress --cpu 1 --timeout 30`
+- view stat
+  `htop`
+
+# Notes
+
 ## Digital Ocean Provide Infrastructer as a Service (IAAS)
 
 1. https://cloud.digitalocean.com/
