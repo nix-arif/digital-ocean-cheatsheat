@@ -16,15 +16,19 @@
 ## Metrics
 
 - installing metrics agent
-  `curl -sSL https://repos.insights.digitalocean.com/install.sh | sudo bash`
+  ```
+  curl -sSL https://repos.insights.digitalocean.com/install.sh | sudo bash
+  ```
 - installing stree (a package to burn CPU)
-  `apt-get install stress`
+  - `apt-get install stress`
 - installing htop (a package to view stat)
-  `apt-get install htop`
+  - `apt-get install htop`
 - stress the CPU for 30 seconds
-  `stress --cpu 1 --timeout 30`
+  - `stress --cpu 1 --timeout 30`
 - view stat
-  `htop`
+  - `htop`
+
+## Firewall
 
 # Notes
 
