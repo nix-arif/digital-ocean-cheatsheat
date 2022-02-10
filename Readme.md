@@ -3,15 +3,25 @@
 ## Basic installation
 
 - ssh to the droplet
-  `ssh -i ~/.ssh/id_rsa root@XXX.XXX.XXX.XXX`
+  ```
+  ssh -i ~/.ssh/id_rsa root@XXX.XXX.XXX.XXX
+  ```
 - update Ubuntu
-  `apt-get update`
+  ```
+  apt-get update
+  ```
 - install nginx
-  `apt-get install nginx`
+  ```
+  apt-get install nginx
+  ```
 - check memory capacity
-  `free -h`
+  ```
+  free -h
+  ```
 - check storage capacity
-  `df -h`
+  ```
+  df -h
+  ```
 
 ## Metrics
 
@@ -20,13 +30,21 @@
   curl -sSL https://repos.insights.digitalocean.com/install.sh | sudo bash
   ```
 - installing stree (a package to burn CPU)
-  - `apt-get install stress`
+  ```
+  apt-get install stress
+  ```
 - installing htop (a package to view stat)
-  - `apt-get install htop`
+  ```
+  apt-get install htop
+  ```
 - stress the CPU for 30 seconds
-  - `stress --cpu 1 --timeout 30`
+  ```
+  stress --cpu 1 --timeout 30
+  ```
 - view stat
-  - `htop`
+  ```
+  htop
+  ```
 
 ## Firewall
 
@@ -143,3 +161,7 @@
 8. `apt-get install htop` (tools to view stat)
 9. `stress --cpu 1 --timeout 30` (stress the CPU for 30 seconds)
 10. `htop` (this command to view stat)
+
+```
+
+```
