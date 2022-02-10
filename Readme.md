@@ -48,6 +48,8 @@
 
 ## Firewall
 
+<img src="./firewall.png" alt="firewall" />
+
 # Notes
 
 ## Digital Ocean Provide Infrastructer as a Service (IAAS)
